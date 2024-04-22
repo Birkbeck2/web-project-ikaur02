@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visual Design Final Project</title>
+<link rel="stylesheet" href="styles.css"><!--Linking CSS file-->
+</head>
+
+<body>
+    <div class="container"><!--Root Container-->
+        <div class="header"><!--Sub-Container 01-->
+            <h1>Welcome to see the magic!</h1><!--Header title-->
+
+              <!--Form top change color of header on the basis of user selection-->
+            <form id="change-color" method="post">
+                <select id="color" name="color">
+                <option value="black">Black</option><!--Values in form selection-->
+                <option value="purple">Purple</option>
+                <option value="randomcolor">Random Color</option>
+                </select>
+
+                <div class="button"><!--Sub-Container 02-->
+                     <button type="submit" id="btn">Let's change</button><!--Submit button-->
+                </div>
+            </form>
+        </div>  
+
+    
+    <section aria-label="Shapes" class="flex-container">
+        <div class="shape orange kite" role="img" aria-label="Kite">
+        </div>
+      </section>
+      
+      <canvas id="myCanvas"> </canvas>
+
+    <!--Form with drop down to show weather of different countries-->
+    <form id="enter-state" method="post">
+        <select id="state" name="state">
+        <option value="london">London</option> <!--Values in form selection-->
+        <option value="singapore">Singapore</option>
+        <option value="dubai">Dubai</option>
+        <option value="china">China</option>
+        <option value="colombia">Colombia</option>
+        <option value="toronto">Toronto</option>
+        <option value="nyc">New York</option>
+        <option value="vancouver">Vancouver</option>
+        <option value="malaysia">Malaysia</option>
+        </select>
+
+        <div class="button"><!--Sub-Container 02-->
+             <button type="button" onclick="fetchWeather()" id="btn">Show weather</button>
+        </div>
+
+        <textarea id="response_text" placeholder="Your response"></textarea>
+
+    </div>
+
+      <script src="scripts.js" defer></script><!--Linking Javascript file-->
+
+</body>
+</html>
