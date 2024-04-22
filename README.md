@@ -1,1 +1,1 @@
-[CLick to view my first Animation](https://birkbeck2.github.io/web-project-ikaur02/)
+[Click to view my first Animation](https://birkbeck2.github.io/web-project-ikaur02/)
